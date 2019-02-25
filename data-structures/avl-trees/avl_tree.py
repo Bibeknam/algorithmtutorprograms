@@ -215,7 +215,7 @@ class AVLTree:
 		if y.right != None:
 			y.right.parent = x
 		
-		x.parent = y.parent;
+		y.parent = x.parent;
 		if x.parent == None:
 			self.root = y
 		elif x == x.parent.right:

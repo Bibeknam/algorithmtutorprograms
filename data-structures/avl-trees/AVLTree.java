@@ -267,7 +267,7 @@ public class AVLTree {
 		if (y.right != null) {
 			y.right.parent = x;
 		}
-		x.parent = y.parent;
+		y.parent = x.parent;
 		if (x.parent == null) {
 			this.root = y;
 		} else if (x == x.parent.right) {

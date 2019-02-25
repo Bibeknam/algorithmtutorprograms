@@ -284,7 +284,7 @@ public:
 		if (y->right != nullptr) {
 			y->right->parent = x;
 		}
-		x->parent = y->parent;
+		y->parent = x->parent;
 		if (x->parent == nullptr) {
 			this->root = y;
 		} else if (x == x->parent->right) {
