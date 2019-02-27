@@ -217,7 +217,7 @@ class BST:
 		# y is parent of x
 		node.parent = y
 		if y == None:
-			root = node
+			self.root = node
 		elif node.data < y.data:
 			y.left = node
 		else:
