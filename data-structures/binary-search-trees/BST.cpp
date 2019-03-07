@@ -317,3 +317,40 @@ int main() {
 	bst.prettyPrint();
 	return 0;
 }
+
+// // replace the subtree rooted at node u with the subtree
+// 	// rooted at node v.
+// 	void transplant(NodePtr u, NodePtr v){
+// 		if (u->parent == nullptr) {
+// 			root = v;
+// 		} else if (u == u->parent->left) {
+// 			u->parent->left = v;
+// 		} else{
+// 			u->parent->right = v;
+// 		}
+
+// 		if (v != nullptr) {
+// 			v->parent = u->parent;
+// 		}
+// 	}
+
+// // delete node x
+// 	void deleteNodeHelper(NodePtr x, int key) {
+// 		if (x->left == nullptr) {
+// 			transplant(x, x->right);
+// 		} else if (x->right == nullptr) {
+// 			transplant(x, x->left);
+// 		} else {
+// 			y = minimum(x->right);
+// 			if (y->parent != x) {
+// 				transplant(y, y->right);
+// 				y->right = x->right;
+// 				y->right->parent = y;
+// 			}
+// 			transplant(x, y);
+// 			y->left = x->left;
+// 			y->left->parent = y;
+// 		}
+
+// 		// fix the tree after the deletion
+// 	}
