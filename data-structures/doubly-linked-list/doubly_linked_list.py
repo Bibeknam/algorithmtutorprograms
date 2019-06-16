@@ -28,6 +28,7 @@ class MyLinkedList:
         node = Node(value)
         if self.is_empty():
             self.head = node
+            self.tail = node
         else:
            self.tail.next = node
            node.prev = self.tail
