@@ -139,7 +139,7 @@ class MyLinkedList {
     int popBack() {
         int item;
         if (isEmpty()) {
-            cout<<"List if empty"<<endl;
+            cout<<"List is empty"<<endl;
             return -99999;
         } else {
             item = tail->data;
@@ -159,7 +159,7 @@ class MyLinkedList {
     // removes an item with value 'key'
     void remove(int key) {
         if (isEmpty()) {
-            cout<<"list is empty"<<endl;
+            cout<<"List is empty"<<endl;
             return;
         }
         
