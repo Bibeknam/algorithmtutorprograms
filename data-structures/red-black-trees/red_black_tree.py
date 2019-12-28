@@ -88,7 +88,7 @@ class RedBlackTree():
                     self.right_rotate(x.parent)
                     s = x.parent.left
 
-                if s.right.color == 0 and s.right.color == 0:
+                if s.left.color == 0 and s.right.color == 0:
                     # case 3.2
                     s.color = 1
                     x = x.parent
