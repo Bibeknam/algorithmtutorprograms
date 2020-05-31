@@ -71,12 +71,8 @@ class MyLinkedList:
         if self.is_empty():
             print 'List is empty'
             return
-
-        curr = self.head
-        while curr.next != None:
-            curr = curr.next
-
-        return curr.data
+       
+        return self.tail.data
 
     # removes the item at front of the linked list and return 
     def pop_front(self):
