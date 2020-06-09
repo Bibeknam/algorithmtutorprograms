@@ -28,7 +28,7 @@ class SplayTree:
 				sys.stdout.write("L----")
 				indent += "|    "
 
-			print currPtr.data
+			print(currPtr.data)
 
 			self.__print_helper(currPtr.left, indent, False)
 			self.__print_helper(currPtr.right, indent, True)
@@ -55,7 +55,7 @@ class SplayTree:
 				node = node.left
 
 		if x == None:
-			print "Couldn't find key in the tree"
+			print("Couldn't find key in the tree")
 			return
 		
 		# split operation
