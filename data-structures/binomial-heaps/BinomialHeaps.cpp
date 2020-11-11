@@ -377,6 +377,12 @@ public:
 		} else if (prevMin != nullptr && minPtr->sibling == nullptr) {
 			prevMin->sibling = nullptr;
 		}
+		else if (prevMin == nullptr && minPtr->sibling == nullptr) {
+			setHead(nullptr);
+		}
+		else if (prevMin == nullptr && minPtr->sibling != nullptr) {
+			setHead(minPtr->sibling);
+		}
 
 		// remove parent reference from all its child
 		NodePtr childPtr = minPtr->child;
