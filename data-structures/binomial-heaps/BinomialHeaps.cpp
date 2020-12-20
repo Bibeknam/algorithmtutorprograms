@@ -376,6 +376,10 @@ public:
 			prevMin->sibling = minPtr->sibling;
 		} else if (prevMin != nullptr && minPtr->sibling == nullptr) {
 			prevMin->sibling = nullptr;
+		}else if(prevMin == nullptr and minPtr->sibling != nullptr) {
+		        head = minPtr->sibling;
+		}else if(prevMin == nullptr and minPtr->sibling == nullptr) {
+		        head = nullptr;
 		}
 
 		// remove parent reference from all its child
