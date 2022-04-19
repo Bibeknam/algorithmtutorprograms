@@ -1,4 +1,4 @@
-# Splay tree implementation in Java
+# Splay tree implementation in Python
 # Author: AlgorithmTutor
 # Tutorial URL: http://algorithmtutor.com/Data-Structures/Tree/Splay-Trees/
 
@@ -28,7 +28,7 @@ class SplayTree:
 				sys.stdout.write("L----")
 				indent += "|    "
 
-			print currPtr.data
+			print(currPtr.data)
 
 			self.__print_helper(currPtr.left, indent, False)
 			self.__print_helper(currPtr.right, indent, True)
@@ -169,7 +169,7 @@ class SplayTree:
 		if node != None:
 			self.__post_order_helper(node.left)
 			self.__post_order_helper(node.right)
-			std.out.write(node.data + " ")
+			sys.std.out.write(node.data + " ")
 
 	# Pre-Order traversal
 	# Node->Left Subtree->Right Subtree
